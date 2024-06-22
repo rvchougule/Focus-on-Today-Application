@@ -17,6 +17,12 @@
   <body>
     <main>
       <h1 class="title">Focus on <span>Today</span></h1>
+      <!-- <div class="sun">
+        <img class="vector" src="./images/sun/vector.png" alt="" />
+        <img class="ellipse1" src="./images/sun/Ellipse 1.png" alt="" />
+        <img class="ellipse2" src="./images/sun/Ellipse 2.png" alt="" />
+        <img class="ellipse3" src="./images/sun/Ellipse 3.png" alt="" />
+      </div> -->
       <div class="app-container">
         <h2>
           Today <img class="sun-icon" src="./images/Sun.svg" alt="sun-icon" />
@@ -26,48 +32,54 @@
           <div class="progress-value"><span>2/3 Completed</span></div>
           <div class="error-label">Please set all the 3 goals!</div>
         </div>
-        <div class="goal">
-          <div class="custom-checkbox">
-            <img
-              class="check-icon"
-              src="./images/Vector 1.svg"
-              alt="check-icon"
+        <div class="goal-container">
+          <div class="goal">
+            <div class="custom-checkbox">
+              <img
+                class="check-icon"
+                src="./images/Vector 1.svg"
+                alt="check-icon"
+              />
+            </div>
+            <input
+              id="first"
+              type="text"
+              class="goal-input"
+              placeholder="Add new goal... "
             />
           </div>
-          <input
-            type="text"
-            class="goal-input"
-            placeholder="Add new goal... "
-          />
-        </div>
-        <div class="goal">
-          <div class="custom-checkbox">
-            <img
-              class="check-icon"
-              src="./images/Vector 1.svg"
-              alt="check-icon"
+          <div class="goal">
+            <div class="custom-checkbox">
+              <img
+                class="check-icon"
+                src="./images/Vector 1.svg"
+                alt="check-icon"
+              />
+            </div>
+            <input
+              id="second"
+              type="text"
+              class="goal-input"
+              placeholder="Add new goal... "
             />
           </div>
-          <input
-            type="text"
-            class="goal-input"
-            placeholder="Add new goal... "
-          />
-        </div>
-        <div class="goal">
-          <div class="custom-checkbox">
-            <img
-              class="check-icon"
-              src="./images/Vector 1.svg"
-              alt="check-icon"
+          <div class="goal">
+            <div class="custom-checkbox">
+              <img
+                class="check-icon"
+                src="./images/Vector 1.svg"
+                alt="check-icon"
+              />
+            </div>
+            <input
+              id="third"
+              type="text"
+              class="goal-input"
+              placeholder="Add new goal... "
             />
           </div>
-          <input
-            type="text"
-            class="goal-input"
-            placeholder="Add new goal... "
-          />
         </div>
+        <button class="add">Add New Goal</button>
         <p class="qoute">“Move one step ahead, today!”</p>
         <p class="made-with">Made with ❤️ by Rohan Chougule</p>
       </div>

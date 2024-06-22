@@ -49,7 +49,7 @@ main {
 
 .progress-value {
   height: 100%;
-  width: 230px;
+  width: 0;
   background-color: #48a300;
   border-radius: 15px;
   color: #eeffe0;
@@ -58,17 +58,24 @@ main {
   display: flex;
   align-items: center;
   overflow: hidden;
+  /* visibility: hidden; */
+  transition: width 0.2s ease-in-out;
 }
 
 .progress-value span {
   margin-left: 20px;
+  min-width: max-content;
 }
 
 .error-label {
   color: #ff5151;
   font-size: 12px;
+  display: none;
 }
 
+.show-error .error-label {
+  display: block;
+}
 .goal {
   margin: 20px 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -125,6 +132,17 @@ main {
   display: none;
 }
 
+.add {
+  background-color: rgba(72, 163, 0, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .completed .custom-checkbox {
   background: #48a300;
   border-color: #48a300;
@@ -146,12 +164,6 @@ main {
 
   .app-container {
     padding: 16px 32px;
-  }
-
-  .goal-container {
-    height: 64px;
-    margin-bottom: 24px;
-    border-radius: 12px;
   }
 
   .custom-checkbox {
